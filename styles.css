@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* it is use to Round corners for the header */
+    border-radius: 10px; 
+    width: 1600px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #4CAF50;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.lyrics {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    /* here i added padding for better readability */
+    padding: 20px; 
+    position: relative;
+}
+
+/* Custom border style for lyrics */
+.lyrics::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+
+/* Box shadow for a lifted effect */
+.lyrics::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.lyrics:hover {
+    background-color: #4CAF50;
+         /* Change text color on hover for better contrast */
+    color: #fff;
+/* Add shadow on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
